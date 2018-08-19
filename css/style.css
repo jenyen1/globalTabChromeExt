@@ -1,7 +1,22 @@
-h1 {
+h1, h4 {
   text-align: center;
 }
 
-a #first, button #second{
-  
+#first, #second {
+  margin-top: 25px;
+}
+
+.box iframe {
+  display: inline-block;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.clear {
+  clear:both;
+}
+
+#music-intro {
+  margin-bottom: 25px;
 }
