@@ -1,28 +1,33 @@
-let request = require('request');
-let cheerio = require('cheerio');
-let jsonframe = require('jsonframe-cheerio')
-
-let url="https://www.bbc.com/news/world";
-request (url, function(error, response, html) {
-  if (!error && response.statusCode === 200) {
-    let $ = cheerio.load(html, {
-      normalizeWhitespace: true,
-      xmlMode: true
-    });
-    jsonframe($);
-    // console.log($.text());
-    // console.log($.html());
-    // console.log($('.title-link__title').text())
-    const topStories = [];
-    $('.title-link__title').each(function(i, elem) {
-      topStories[i] = $(this).text();
-      console.log(topStories[i]);
-      if (i === 9) {
-        return false;
-      }
-    });
-
-  } else {
-    console.log("We've encounter an error: " + error);
-  }
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('content loaded');
+  document.getElementById('world-news').addEventListener('click', scrapeWorld);
 });
+
+function handlerTest() {
+  console.log('button clicked');
+}
+
+function scrapeWorld() {
+  $.get('https://www.bbc.com/news/world/', function(response) {
+    // console.log(response);
+    // console.log('reached');
+    var contents = [];
+    $(response).find('span.title-link__title-text').each(function() {
+      contents.push( $(this).text() );
+    });
+    // for (var i = 0; i < 10; i++) {   // grab first 10 articles
+    //   console.log(contents[i]);
+    // }
+    document.getElementById('world-box1').innerHTML = contents[0];
+    document.getElementById('world-box2').innerHTML = contents[1];
+    document.getElementById('world-box3').innerHTML = contents[2];
+    document.getElementById('world-box4').innerHTML = contents[3];
+    document.getElementById('world-box5').innerHTML = contents[4];
+    document.getElementById('world-box6').innerHTML = contents[5];
+    document.getElementById('world-box7').innerHTML = contents[6];
+    document.getElementById('world-box8').innerHTML = contents[7];
+    document.getElementById('world-box9').innerHTML = contents[8];
+    document.getElementById('world-box10').innerHTML = contents[9];
+    // console.log('ended');
+  });
+}
