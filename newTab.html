@@ -21,11 +21,12 @@
       <div class="col-12">
 
         <!--first button-->
-        <a class="btn btn-primary" id="first" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Music</a>
+        <a class="btn btn-success" id="first" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Music</a>
         <div class="collapse multi-collapse" id="multiCollapseExample1">
           <div class="card card-body">
             <p style="margin-bottom: 25px;">Music is a universal language of culture. Try listening to something new today!
-              <br> Please log in to Spotify premium for the best experience. New songs and playlists will be updated periodically.</p>
+              <br> Please log in to Spotify premium for the best experience. New songs and playlists will be updated periodically.
+              <br>If playlists do not load immediately, please wait a moment!</p>
 
             <!--buttons for continents-->
             <div class-"form-row text-center">
@@ -34,7 +35,7 @@
                 <!--Africa-->
                 <button class="btn btn-primary" id="first-m" data-toggle="collapse" href="#Africa" role="button" aria-expanded="false" aria-controls="Africa">Africa</button>
                 <div class="collapse multi-collapse" id="Africa">
-                  <div class="card card-body">
+                  <div class="card card-body section">
                     <div class="box">
                       <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DWYkaDif7Ztbp" id="African-Heat" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                       <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DWX0o6sD1a6P5" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -99,10 +100,11 @@
         </div>
 
         <!--second button-->
-        <button class="btn btn-primary" id="second" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">News</button>
+        <button class="btn btn-danger" id="second" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">News</button>
         <div class="collapse multi-collapse" id="multiCollapseExample2">
           <div class="card card-body">
-            <p>Get your daily dose of news here! <br> Titles of the top 10 articles of each category are continually web-scraped from BBC news and displayed here for your convenience.</p>
+            <p>Get your daily dose of news here! <br> Titles of the top 10 articles of each category are continually web-scraped from BBC news and displayed here for your convenience.
+                <br>Click the BBC News logo to be redirected to the appropriate page in a new tab.</p>
 
             <!--buttons for continents-->
             <div class-"form-row text-center">
@@ -122,6 +124,9 @@
                     <div class="box" id="world-box8"></div>
                     <div class="box" id="world-box9"></div>
                     <div class="box" id="world-box10"></div>
+                    <div class="bbc-wrap">
+                      <a href="https://www.bbc.com/news/world" target="_blank"><img src="img/bbc-news.jpg" alt=""/></a>
+                    </div>
                   </div>
                 </div>
 
@@ -139,6 +144,9 @@
                     <div class="box" id="africa-box8"></div>
                     <div class="box" id="africa-box9"></div>
                     <div class="box" id="africa-box10"></div>
+                    <div class="bbc-wrap">
+                      <a href="https://www.bbc.com/news/world/africa" target="_blank"><img src="img/bbc-news.jpg" alt=""/></a>
+                    </div>
                   </div>
                 </div>
 
@@ -156,6 +164,9 @@
                     <div class="box" id="asia-box8"></div>
                     <div class="box" id="asia-box9"></div>
                     <div class="box" id="asia-box10"></div>
+                    <div class="bbc-wrap">
+                      <a href="https://www.bbc.com/news/world/asia" target="_blank"><img src="img/bbc-news.jpg" alt=""/></a>
+                    </div>
                   </div>
                 </div>
 
@@ -173,6 +184,9 @@
                     <div class="box" id="australia-box8"></div>
                     <div class="box" id="australia-box9"></div>
                     <div class="box" id="australia-box10"></div>
+                    <div class="bbc-wrap">
+                      <a href="https://www.bbc.com/news/world/australia" target="_blank"><img src="img/bbc-news.jpg" alt=""/></a>
+                    </div>
                   </div>
                 </div>
 
@@ -190,6 +204,9 @@
                     <div class="box" id="europe-box8"></div>
                     <div class="box" id="europe-box9"></div>
                     <div class="box" id="europe-box10"></div>
+                    <div class="bbc-wrap">
+                      <a href="https://www.bbc.com/news/world/europe" target="_blank"><img src="img/bbc-news.jpg" alt=""/></a>
+                    </div>
                   </div>
                 </div>
 
@@ -207,6 +224,9 @@
                     <div class="box" id="la-box8"></div>
                     <div class="box" id="la-box9"></div>
                     <div class="box" id="la-box10"></div>
+                    <div class="bbc-wrap">
+                      <a href="https://www.bbc.com/news/world/latin_america" target="_blank"><img src="img/bbc-news.jpg" alt=""/></a>
+                    </div>
                   </div>
                 </div>
 
@@ -224,6 +244,9 @@
                     <div class="box" id="me-box8"></div>
                     <div class="box" id="me-box9"></div>
                     <div class="box" id="me-box10"></div>
+                    <div class="bbc-wrap">
+                      <a href="https://www.bbc.com/news/world/middle_east" target="_blank"><img src="img/bbc-news.jpg" alt=""/></a>
+                    </div>
                   </div>
                 </div>
 
@@ -234,7 +257,7 @@
         </div>
 
         <!--Third button-->
-        <button class="btn btn-primary" id="third" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Photos</button>
+        <button class="btn btn-warning" id="third" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Photos</button>
         <div class="collapse multi-collapse" id="multiCollapseExample3">
           <div class="card card-body">
 
